@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  
+  <title>Movie Review Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .bg-container {
+     background-image: url("https://img.freepik.com/free-photo/movie-background-collage_23-2149876028.jpg");
+     height: 100vh;
+     background-size: cover;
+}
+    </style>
+</head>
+
+<body>
+   <div id="sectionHome">
+      <div class="bg-container d-flex flex-column justify-content-center">
+        <div class="tourism-card  align-middle text-center text-white">
+          <h1 class="text-5xl font-bold m-3 ">MOVIE REVIEWS  </h1>
+          <p class="text-3xl m-3 font-serif ">Click here to Check the latest movie reviews.</p>
+          <button class="bg-blue-500 hover:bg-blue-700 h-16 w-36  text-white font-bold py-2 px-4 border border-blue-700 rounded" onclick="display('sectionMovieReviews')">Click here</button>
+        </div>
+      </div>
+    </div>
+  <div id="sectionMovieReviews">
+  <div class="bg-gray-200">
+  <nav class="bg-gray-800 text-white p-4">
+    <div class="container mx-auto">
+      <a href="#" class="text-xl font-bold">Movie Reviews</a>
+    </div>
+  </nav>
+
+  <header class="bg-gray-200 text-gray-800 py-16">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold font-mono">Latest Reviews</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+        <div class="bg-white rounded-lg shadow-lg p-8">
+          <img src="https://www.searchhyderabad.com/wp-content/uploads/2022/06/Avatar-2-movie-on-hotstar.jpg" class="object-center object-cover w-11/12 h-72 mb-2" /> 
+          <h2 class="text-2xl font-bold">AVATAR 2</h2>
+          <p> Rating: 5/5  <mark class="text-2xl ">&star;&star;&star;&star;&star;</mark></p>
+          <p>Avatar: The Way of Water review : Stunning Sequel , Performances: James Cameron is known for getting the optimum out of his cast and crew. All the actors came up with brilliant performances. Jakes Sully standout by showing variations in expressions and emotions. He maintained the same intensity to make an impact. Zoe Saldana, Clif Curtiss, and Kate Winslet blended with him to elevate the scenes with their performances. The actors who played the roles of their children brought in good emotions to complete the story..</p>
+          <div class="px-6 pt-4 pb-2">
+             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Director</span>
+             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Actors</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Budget</span>
+          </div>
+          <a href="#" class="block mt-4 text-blue-500 hover:underline">Read More</a>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-8">
+          <img src="https://origin-staticv2.sonyliv.com/0/bahubali_2_12dec_landscape_thumb.jpg" class="w-11/12 h-72 mb-2" />
+          <h2 class="text-2xl font-bold">BAHUBALI 2</h2>
+          <p> Rating: 4/5  <mark class="text-2xl ">&star;&star;&star;&star;</mark></p>
+          <p>SS Rajamouli’s epic saga Baahubali 2: The Conclusion comes across richer and more fantastic. There is a lot more in this fairytale world -- a new city, a moonlit war, cattle with fire in their horns and Disneyesque palatial ships. Baahubali is a delight for all those who enjoy cinema as a visual medium, there is not much else, though.The Conclusion begins seamlessly just where it left in the first movie with Kattappa narrating the story of Mahishmati. The scale rises soon enough as Baahubali enters the screen to tame an elephant gone wild with cheers from the audience as is wont of a superstar.</p>
+        <div class="px-6 pt-4 pb-2">
+             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Director</span>
+             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Actors</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Budget</span>
+        </div>
+          <a href="#" class="block mt-4 text-blue-500 hover:underline">Read More</a>
+        </div>
+         <div class="bg-white rounded-lg shadow-lg p-8">
+          <img src="https://i.ytimg.com/vi/HiwFJ97qUx4/maxresdefault.jpg" class="w-11/12 h-72 mb-2" />
+          <h2 class="text-2xl font-bold">SAAHO</h2>
+          <p> Rating: 3/5  <mark class="text-2xl ">&star;&star;&star;</mark></p>
+          <p>Saaho Review: Billed as India's biggest action entertainer, Saaho is all about the feud among a few members of world's biggest crime syndicate, based out of Waaji city, somewhere away from India. Some of the over ambitious and brutal men (and a woman) of the gang finish off Roy (Jackie Shroff), their leader, in order to obtain a secret black box through which they aspire to become billionaires.Meanwhile, cops in India are after a smart thief (Neil Nitin Mukesh) who looted two lakh crore rupees. The team is headed by Ashok (Prabhas) and Amrita (Shraddha Kapoor). After thorough investigation, it's revealed that there's a link between the huge sum and Waaji city. The arrival of Vishwa (Arun Vijay), the son of Roy, makes the plot more intriguing as he sets out to find his father's murderer and the lost money in India..</p>
+        <div class="px-6 pt-4 pb-2">
+             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Director</span>
+             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Actors</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Budget</span>
+        </div>
+          <a href="#" class="block mt-4 text-blue-500 hover:underline">Read More</a>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-8">
+           <img src="https://i.ytimg.com/vi/lDVQojLPI4Y/maxresdefault.jpg" class="w-11/12 h-72 mb-2" />
+          <h2 class="text-2xl font-bold">RRR</h2>
+          <p> Rating: 4/5  <mark class="text-2xl ">&star;&star;&star;&star;</mark></p>
+          <p>This Indian action-drama offers viewers about as much fun as you can have with a movie. RRR is pure cinema, at times completely over-the-top and ridiculous, but remaining grounded by its historical context. The credit must go to director S.S. Rajamouli for this ambitious undertaking. He truly is a master of his craft, with some spellbinding sequences -- scenes that you may say out loud in the planning stage, but to actually bring them to life is another matter. He may not have the budget of a major Hollywood production, but it matters little such is the strength in storytelling, and his ability to create such epic set-pieces. RRR combines fantasy with realism in a striking way, and while the film tells an important tale, above anything else, it's just purely, and utterly entertaining.
+          </p>
+          <div class="px-6 pt-4 pb-2">
+             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Director</span>
+             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Actors</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Budget</span>
+          </div>
+          <a href="#" class="block mt-4 text-blue-500 hover:underline">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div>
+  <div class="flex items-center space-x-2 text-base ml-12 mt-5">
+    <h4 class="font-semibold text-slate-900 font-bold font-serif text-3xl">Check the Favourite Movies here to click the icons</h4>
+    
+  </div>
+  <div class="mt-3 ml-12 flex -space-x-2 overflow-hidden">
+    <img class="inline-block h-28 w-28 rounded-full ring-2 ring-white" src="https://itswynnesworld.files.wordpress.com/2019/04/avengers-endgame.jpg?w=720" alt="" onclick="display('sectionAvengersDetailedView')" />
+    <img class="inline-block h-28 w-28 rounded-full ring-2 ring-white" src="https://www.telugubulletin.com/wp-content/uploads/2021/12/Spider-Man-No-Way-Home-Review.jpg" alt="" onclick="display('sectionSpidermanDetailedView')"/>
+    <img class="inline-block h-28 w-28 rounded-full ring-2 ring-white" src="https://i.ytimg.com/vi/3dNwDob56aw/maxresdefault.jpg" alt=""/ onclick="display('sectionThorDetailedView')">
+    
+    <img class="inline-block h-28 w-28 rounded-full ring-2 ring-white" src="https://upload.wikimedia.org/wikipedia/en/9/99/Dangal_Poster.jpg" alt=""/ onclick="display('sectionDangalDetailedView')">
+  </div>
+  <div class="mt-3 ml-12 mb-3  font-medium">
+    <a href="#" class="text-blue-500 text-xl ">+ All Languages  </a>
+  </div>
+</div>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded ml-12" onclick="display('sectionHome')">back</button>
+  </header>
+
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      &copy; 2023 Movie Reviews. All rights reserved.
+    </div>
+  </footer>
+  </div>
+  </div>
+  <div id="sectionAvengersDetailedView">
+      <header class="bg-gray-200 text-gray-800 py-16">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold font-serif mb-3">Detailed view</h1>
+        <div class="bg-white rounded-lg shadow-lg p-8">
+          <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://itswynnesworld.files.wordpress.com/2019/04/avengers-endgame.jpg?w=720"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://pyxis.nymag.com/v1/imgs/953/9e8/e3ffe901eb7a8e99dff277b5e5bf6d0404-16-avengers-saga-end-lede.2x.rhorizontal.w700.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://morganmagazine.files.wordpress.com/2019/07/avengers-endgame-main-pic.jpg?w=616"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="detailed-view-card-text-container mt-3">
+            <h1 class="text-2xl font-bold ">AVENGERS END GAME</h1>
+            <p> Rating: 5/5  <mark class="text-2xl ">&star;&star;&star;&star;&star;</mark></p>
+            <h1 class="text-xl font-bold text-serif">Avengers End Game is both action and Graphical</h1>
+            <p class="font-serif">
+              “Avengers: Endgame” is the culmination of a decade of blockbuster filmmaking, the result of years of work from thousands of people. It is designed to be the most blockbuster of all the blockbusters, a movie with a dozen subplots colliding, and familiar faces from over 20 other movies. It’s really like nothing that Hollywood has produced before, existing not just to acknowledge or exploit the fans of this series, but to reward their love, patience, and undying adoration. The blunt thing you probably want to know most: It’s hard to see serious MCU fans walking away from this disappointed. It checks all the boxes, even ticking off a few ones that fans won’t expect to be on the list. It’s a satisfying end to a chapter of blockbuster history that will be hard to top for pure spectacle. In terms of sheer entertainment value, it’s on the higher end of the MCU, a film that elevates its most iconic heroes to the legendary status they deserve and provides a few legitimate thrills along the way.“Avengers: Endgame” is the culmination of a decade of blockbuster filmmaking, the result of years of work from thousands of people. It is designed to be the most blockbuster of all the blockbusters, a movie with a dozen subplots colliding, and familiar faces from over 20 other movies. It’s really like nothing that Hollywood has produced before, existing not just to acknowledge or exploit the fans of this series, but to reward their love, patience, and undying adoration. The blunt thing you probably want to know most: It’s hard to see serious MCU fans walking away from this disappointed. It checks all the boxes, even ticking off a few ones that fans won’t expect to be on the list. It’s a satisfying end to a chapter of blockbuster history that will be hard to top for pure spectacle. In terms of sheer entertainment value, it’s on the higher end of the MCU, a film that elevates its most iconic heroes to the legendary status they deserve and provides a few legitimate thrills along the way.
+            </p>
+          </div>
+          </div>
+        </div>
+       <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded ml-9 mt-3" onclick="display('sectionMovieReviews')">
+          back
+        </button>
+      </div>
+    </div>
+   <div id="sectionSpidermanDetailedView">
+      <header class="bg-gray-200 text-gray-800 py-16">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold font-serif mb-3">Detailed view</h1>
+        <div class="bg-white rounded-lg shadow-lg p-8">
+          <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://www.telugubulletin.com/wp-content/uploads/2021/12/Spider-Man-No-Way-Home-Review.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://sm.ign.com/t/ign_pl/screenshot/default/image_c2h6.1280.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://www.telugubulletin.com/wp-content/uploads/2021/12/Spider-Man-No-Way-Home-Review.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="detailed-view-card-text-container mt-3">
+            <h1 class="text-2xl font-bold ">SPIDER MAN</h1>
+            <p> Rating: 4/5  <mark class="text-2xl ">&star;&star;&star;&star;</mark></p>
+            <h1 class="text-xl font-bold text-serif">Spiderman is both action and visual wonder</h1>
+            <p class="font-serif">
+             Spider-Man: No Way Home Story: After the world discovers that Peter Parker (Tom Holland) is Spider-Man, he approaches Doctor Strange (Benedict Cumberbatch) to fix the problem.Spider-Man: No Way Home Review: Swinging right back to the moment that changed Peter Parker’s (Tom Holland) life in ‘Far From Home’ (2019), ‘No Way Home’ shows us why Peter’s secret is crucial. Not just to him but also to his friends and loved ones. Peter approaches Doctor Strange (Benedict Cumberbatch) to change things back to the way they were before. But as the sorcerer uses his powers to make the world forget Spider-Man’s identity, Peter gets a lot more than he bargained for.Technically this isn’t Spider-Man’s first foray into the Multiverse. We’ve seen this before, with stunning results in ‘Into the Spider-Verse’ (2018). Yet, no number of leaks or spoilers can ruin how ‘No Way Home’ plays out. The third Spider-Man film in the MCU isn’t afraid to step away from the visually spectacular action to develop emotional beats. This happens even during massive set pieces, and director Jon Watts uses them to focus on heavier or lighter themes in equal measure as the situation demands. Even if this comes at the cost of the film’s runtime, it works more often than not. While a couple of No Way Home’s sections may overstay their welcome, they will be generally well-received.
+            </p>
+          </div>
+          </div>
+        </div>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded ml-9 mt-3" onclick="display('sectionMovieReviews')">
+          back
+        </button>
+      </div>
+    </div>
+     <div id="sectionThorDetailedView">
+      <header class="bg-gray-200 text-gray-800 py-16">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold font-serif mb-3">Detailed view</h1>
+        <div class="bg-white rounded-lg shadow-lg p-8">
+          <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://i.ytimg.com/vi/3dNwDob56aw/maxresdefault.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2022/07/thor-1-1657101164.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.toiimg.com/photo/92699216.jpeg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="detailed-view-card-text-container mt-3">
+            <h1 class="text-2xl font-bold ">THOR </h1>
+            <p> Rating: 4/5  <mark class="text-2xl ">&star;&star;&star;&star;</mark></p>
+            <h1 class="text-xl font-bold text-serif">Thor is both action,comedy and adventure</h1>
+            <p class="font-serif">
+             Story: Mighty warrior Thor (Chris Hemsworth), the god of thunder, is banished to earth by his father (Anthony Hopkins), the king of Asgard, after he unnecessarily re-ignites an ancient war between two warring clans. Can the pretty earthling, scientist Natalie Portman, help him find his way back home or would she like to keep him for herself.
+             Movie Review: Thor clicks because of the comic undertones. The special effects are all there, specially when the film is anchored in extra-terrestrial realms and Thor and his companions battle all kinds of ogres and monsters. The kingdom of Asgard has all the stuff screen mythology is made of: rivers of fire, red-eyed giants, ugly creatures, traitors, tyrants and warriors with saber and steel. Thor, of course has the hammer.But the film perks up when Thor crash-lands on Earth in the Mexican desert and is rescued by Natalie Portman. Is it a known species, wonders the pretty young scientist, as Thor confuses her with his alien demeanour. But before she can let the crackling chemistry between them hit the sky, Thor's got company from the skies. Time for some taut action again.
+            </p>
+          </div>
+          </div>
+        </div>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded ml-9 mt-3" onclick="display('sectionMovieReviews')">
+          back
+        </button>
+      </div>
+    </div>
+    <div id="sectionDangalDetailedView">
+      <header class="bg-gray-200 text-gray-800 py-16">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold font-serif mb-3">Detailed view</h1>
+        <div class="bg-white rounded-lg shadow-lg p-8">
+          <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://www.mapsofindia.com/ci-moi-images/my-india/2016/12/dangal.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://s01.sgp1.digitaloceanspaces.com/large/824837-47888-rkwferdgia-1482380633.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://flixwatch.co/wp-content/uploads/80166185.jpg.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="detailed-view-card-text-container mt-3">
+            <h1 class="text-2xl font-bold ">DANGAL</h1>
+            <p> Rating: 5/5  <mark class="text-2xl ">&star;&star;&star;&star;&star;</mark></p>
+            <h1 class="text-xl font-bold text-serif">Dangal is both action and adventure</h1>
+            <p class="font-serif">
+              Dangal Story: When Mahavir Singh Phogat (Aamir), a wrestler from Haryana, loses hope of having a son, he trains his daughters Geeta (Fatima) and Babita (Sanya) to make wrestling history, thus breaking the taboo of Indian women participating in a sport thus far dominated by men.Dangal Review: In the story department, Dangal offers few surprises because Geeta and Babita's historic wins at the Commonwealth Games and following championships are common knowledge. However, this screen adaptation serves as a recap of their arduous journey and it vigorously recaptures their stubborn father's resolve to make them professional wrestlers against the odds. Since it encapsulates the historic wins of the Phogats, who brought India glory, the film is also bound to inspire more women to seriously consider kushti as a sport.What works wonderfully here is the writing. Director Nitesh Tiwari, along with Piyush Gupta, Shreyas Jain and Nikhil Mehrotra should be complimented for their tongue-in-cheek quality, peppered with humour and several poignant father-daughter emotions all through. Of course, a little bit is lost in translation because of the Haryanvi twang. But, messages on our obsession with the male child (prevalent since the dark ages), myopic stand on bringing up our daughters and the administration’s pathetic disposition towards sports, are loud and clear.
+            </p>
+          </div>
+          </div>
+        </div>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded ml-9 mt-3" onclick="display('sectionMovieReviews')">
+          back
+        </button>
+      </div>
+  <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+  
+</body>
+
+</html>
